@@ -11,13 +11,13 @@ pipeline {
 
         stage('Build') {
             steps {
-                echo 'Hello World'
+                sh 'dotnet build'
             }
         }
 
         stage('Test') {
             steps {
-                echo 'Hello World'
+                sh 'dotnet test'
             }
         }
         
